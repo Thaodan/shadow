@@ -7,7 +7,6 @@
 #define SHADOW_INCLUDE_LIB_ATOI_STR2I_H_
 
 
-#include <config.h>
 
 #include <limits.h>
 #include <stddef.h>

@@ -6,7 +6,6 @@
 #define SHADOW_INCLUDE_LIB_MALLOC_H_
 
 
-#include <config.h>
 
 #include <assert.h>
 #include <errno.h>

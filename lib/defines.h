@@ -4,8 +4,6 @@
 #ifndef _DEFINES_H_
 #define _DEFINES_H_
 
-#include "config.h"
-
 #include <stdbool.h>
 #include <locale.h>
 
@@ -20,7 +18,9 @@
 # define bindtextdomain(Domain, Directory)	(NULL)
 # undef textdomain
 # define textdomain(Domain)	(NULL)
+# ifndef _
 # define _(Text) Text
+# endif
 # define ngettext(Msgid1, Msgid2, N) \
     ((N) == 1 ? (const char *) (Msgid1) : (const char *) (Msgid2))
 #endif

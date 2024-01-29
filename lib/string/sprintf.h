@@ -8,8 +8,6 @@
 #define SHADOW_INCLUDE_LIB_SPRINTF_H_
 
 
-#include <config.h>
-
 #include <stdarg.h>
 #include <stddef.h>
 #include <stdio.h>

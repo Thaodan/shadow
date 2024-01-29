@@ -6,7 +6,6 @@
 #define SHADOW_INCLUDE_LIB_ATOI_STRTOI_H_
 
 
-#include <config.h>
 
 #include <errno.h>
 #include <inttypes.h>

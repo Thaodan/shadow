@@ -2,7 +2,6 @@
 #define SHADOW_INCLUDE_LIB_ATTR_H_
 
 
-#include "config.h"
 
 
 #if defined(__GNUC__)

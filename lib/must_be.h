@@ -8,7 +8,6 @@
 #define SHADOW_INCLUDE_LIBMISC_MUST_BE_H_
 
 
-#include <config.h>
 
 #include <assert.h>
 
