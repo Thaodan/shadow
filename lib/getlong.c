@@ -4,13 +4,8 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 
-#include <config.h>
-
-#ident "$Id$"
-
 #include <stdlib.h>
 #include <errno.h>
-#include "prototypes.h"
 
 /*
  * getlong - extract a long integer provided by the numstr string in *result
@@ -33,4 +28,3 @@ int getlong (const char *numstr, /*@out@*/long int *result)
 	*result = val;
 	return 1;
 }
-

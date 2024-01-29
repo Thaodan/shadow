@@ -19,8 +19,6 @@
 #ifndef _PROTOTYPES_H
 #define _PROTOTYPES_H
 
-#include <config.h>
-
 #include <sys/stat.h>
 #ifdef USE_UTMPX
 #include <utmpx.h>
@@ -241,7 +239,7 @@ extern void motd (void);
 extern /*@null@*//*@only@*/struct passwd *get_my_pwent (void);
 
 /* nss.c */
-#include <libsubid/subid.h>
+// #include <libsubid/subid.h>
 extern void nss_init(const char *nsswitch_path);
 extern bool nss_is_initialized(void);
 

@@ -7,12 +7,13 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 
-#include <config.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <limits.h>
+#include <string.h>
 
-#ident "$Id$"
+#define SYSLOG(...)
 
-#include "prototypes.h"
-#include "defines.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
@@ -66,6 +67,10 @@ struct itemdef {
 	{"LOGIN_PLAIN_PROMPT", NULL},		\
 	{"MOTD_FIRSTONLY", NULL},		\
 
+
+#define USE_SYSLOG
+#define USE_SHA_CRYPT
+#define WITH_TCB
 
 #define NUMDEFS	(sizeof(def_table)/sizeof(def_table[0]))
 static struct itemdef def_table[] = {
@@ -591,12 +596,11 @@ static void def_load (void)
 #endif
 }
 
-
 #ifdef CKDEFS
 int main (int argc, char **argv)
 {
 	int i;
-	char *cp;
+	const char *cp;
 	struct itemdef *d;
 
 	def_load ();
